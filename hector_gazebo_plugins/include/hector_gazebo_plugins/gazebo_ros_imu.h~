@@ -78,7 +78,7 @@ namespace gazebo
       ros::Publisher pubt;   //-----------vsung , 2017/10/23, 18:28
       ros::Publisher pubt1; 
       /// \brief ros message
-      sensor_msgs::Imu imuMsg;
+      huskyterrain::imutrans imuMsg;
       sensor_msgs::Imu biasMsg;
       geometry_msgs::Point thetest;   //----------------vsung
       geometry_msgs::Point thet1;

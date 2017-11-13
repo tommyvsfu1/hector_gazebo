@@ -170,7 +170,7 @@ void GazeboRosIMU::Load(physics::ModelPtr _model, sdf::ElementPtr _sdf)
     bias_pub_ = node_handle_->advertise<sensor_msgs::Imu>(bias_topic_, 10);
 
 
-    pubt = node_handle_->advertise<geometry_msgs::Point>("angularaccerlation", 1);
+    pubt = node_handle_->advertise<geometry_msgs::Point>("angul", 1);
     pubt1 = node_handle_->advertise<geometry_msgs::Point>("thetesting1", 1);
 #ifdef DEBUG_OUTPUT
   debugPublisher = rosnode_->advertise<geometry_msgs::PoseStamped>(topic_ + "/pose", 10);
